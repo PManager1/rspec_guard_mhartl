@@ -14,8 +14,7 @@ group :development, :test do
   gem 'rb-fsevent', :require => false if RUBY_PLATFORM =~ /darwin/i
   gem 'guard-spork' 
   gem 'guard-rspec'
-  gem 'guard-livereload'
-#  gem 'growl_notify'
+# gem 'guard-livereload'
 end
 
 
