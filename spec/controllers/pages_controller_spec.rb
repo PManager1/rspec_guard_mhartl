@@ -41,6 +41,7 @@ describe PagesController do
     #        end
   end
 
+<<<<<<< HEAD
   describe "GET 'about'" do
      it "returns http success" do
        get 'about'
@@ -55,6 +56,17 @@ describe PagesController do
         
    end
 
+=======
+
+  describe "GET 'about'" do
+    it "returns http success" do
+      get 'about'
+      response.should be_success
+    end
+  end
+  
+  
+>>>>>>> 39a5433ea8d9fce1a9808d6b2407de215cae02a6
 end
 
 

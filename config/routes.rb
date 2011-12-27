@@ -2,9 +2,11 @@ Guard2::Application.routes.draw do
   
 
   get "pages/home"
-
   get "pages/contact"
+<<<<<<< HEAD
   
+=======
+>>>>>>> 39a5433ea8d9fce1a9808d6b2407de215cae02a6
   get "pages/about"
 
   # The priority is based upon order of creation:
