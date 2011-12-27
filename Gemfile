@@ -18,6 +18,7 @@ end
 
 group :test do
 gem 'guard-spork'
+gem 'ruby_gntp'
 end
 
 # Gems used only for assets and not required
