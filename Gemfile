@@ -19,6 +19,7 @@ end
 group :test do
 gem 'guard-spork'
 gem 'ruby_gntp'
+gem 'webrat'        # - added later  by JP
 end
 
 # Gems used only for assets and not required
