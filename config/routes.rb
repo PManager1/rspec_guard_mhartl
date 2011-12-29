@@ -2,12 +2,22 @@ Guard2::Application.routes.draw do
   
   get "users/new"
 
+<<<<<<< HEAD
   match '/contact' => 'pages#contact' #1  It creates a named route, will let us get to the contact page 
   match '/about' => 'pages#about'      #2  by typing  contact_path or contact_url
   match '/help' => 'pages#help' 
   match '/signup' => 'users#new' 
   
   root :to => "pages#home"
+=======
+  get "pages/home"
+  get "pages/contact"
+<<<<<<< HEAD
+  
+=======
+>>>>>>> 39a5433ea8d9fce1a9808d6b2407de215cae02a6
+  get "pages/about"
+>>>>>>> c41798b2b20f2648ec33f0eeaf65dea9abd3ee1b
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

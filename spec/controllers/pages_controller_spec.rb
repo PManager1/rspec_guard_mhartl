@@ -2,6 +2,7 @@ require 'spec_helper'
 
 describe PagesController do
   render_views
+<<<<<<< HEAD
 
   before(:each) do
     @base_title = "Ruby on Rails Tutorial Sample App"
@@ -42,6 +43,31 @@ describe PagesController do
     #                                            :content => "1 follower")
     #       end
     #     end
+=======
+    
+    before(:each) do
+      @base_title = "Ruby on Rails Tutorial Sample App"
+    end
+    
+    
+  describe "GET 'home'" do
+    
+    it "returns http success" do
+      get 'home'
+      response.should be_success
+    end
+    
+    # it "should have the right title" do
+    #                  get 'home'
+    #                  response.should have_selector("title",
+    #                                                :content => "#{@base_title} | Home")
+    #                end
+    #   
+          it "should have a non-blank body" do
+            get 'home'
+            response.body.should_not =~ /<body>\s*<\/body>/
+          end
+>>>>>>> c41798b2b20f2648ec33f0eeaf65dea9abd3ee1b
     
   end
 
@@ -50,6 +76,7 @@ describe PagesController do
       get 'contact'
       response.should be_success
     end
+<<<<<<< HEAD
 
     it "should have the right title" do
              get 'contact'
@@ -86,4 +113,42 @@ describe PagesController do
   end
 
  
+=======
+    
+    # it "should have the right title" do
+    #          get 'contact'
+    #          response.should have_selector("title",
+    #                                        :content => "#{@base_title} | Contact")
+    #        end
+  end
+
+<<<<<<< HEAD
+  describe "GET 'about'" do
+     it "returns http success" do
+       get 'about'
+       response.should be_success
+     end
+     
+     # it "should have the right title" do
+     #          get 'about'
+     #          response.should have_selector("title",
+     #                                        :content => "#{@base_title} | About")
+     #        end
+        
+   end
+
+=======
+
+  describe "GET 'about'" do
+    it "returns http success" do
+      get 'about'
+      response.should be_success
+    end
+  end
+  
+  
+>>>>>>> 39a5433ea8d9fce1a9808d6b2407de215cae02a6
+>>>>>>> c41798b2b20f2648ec33f0eeaf65dea9abd3ee1b
 end
+
+

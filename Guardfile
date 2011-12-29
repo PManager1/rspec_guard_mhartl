@@ -1,7 +1,11 @@
 # A sample Guardfile
 # More info at https://github.com/guard/guard#readme
 
+<<<<<<< HEAD
 guard 'rspec', :version => 2, :cli => '--drb' do
+=======
+guard 'rspec', :version => 2, :cli => "--drb" do
+>>>>>>> 39a5433ea8d9fce1a9808d6b2407de215cae02a6
   watch(%r{^spec/.+_spec\.rb$})
   watch(%r{^lib/(.+)\.rb$})     { |m| "spec/lib/#{m[1]}_spec.rb" }
   watch('spec/spec_helper.rb')  { "spec" }
@@ -42,3 +46,12 @@ end
 
 
 
+
+guard 'livereload' do
+  watch(%r{app/.+\.(erb|haml)})
+  watch(%r{app/helpers/.+\.rb})
+  watch(%r{(public/|app/assets).+\.(css|js|html)})
+  watch(%r{(app/assets/.+\.css)\.s[ac]ss}) { |m| m[1] }
+  watch(%r{(app/assets/.+\.js)\.coffee}) { |m| m[1] }
+  watch(%r{config/locales/.+\.yml})
+end
