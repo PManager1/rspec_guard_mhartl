@@ -3,10 +3,11 @@ source 'http://rubygems.org'
 gem 'rails', '3.1.3'
 
 
-gem 'sqlite3'
+
 
 
 group :development, :test do
+  gem 'sqlite3-ruby', :require => 'sqlite3' 
   gem 'rspec-rails'
   gem 'capybara', :git => 'git://github.com/jnicklas/capybara.git'
   gem 'launchy'
@@ -25,6 +26,13 @@ gem 'ruby_gntp'
 gem 'webrat'        # - added later  by JP
 
 end
+
+
+group :production, :staging do
+  gem "pg"
+end
+
+
 
  
 # Gems used only for assets and not required
