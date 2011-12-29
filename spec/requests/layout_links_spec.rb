@@ -13,6 +13,7 @@ end
 end
 
  it "should have an About page at '/about'" do
+   get '/about'
   response.should have_selector('title', :content => "About")
 end
 
@@ -22,6 +23,9 @@ end
 end
 
 end
+
+
+
 
 
 
